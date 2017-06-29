@@ -14,7 +14,7 @@ export default function tourStepDirective(TourHelpers, uiTourService, $sce) {
             //Assign required options
                 step,
                 events = 'onShow onShown onHide onHidden onNext onPrev onBackdropClick'.split(' '),
-                options = 'content title animation placement backdrop backdropBorderRadius currentStep maxStep orphan popupDelay popupCloseDelay popupClass fixed preventScrolling scrollIntoView nextStep prevStep nextPath prevPath scrollOffset scrollParentId'.split(' '),
+                options = 'content title animation placement backdrop backdropBorderRadius buttonText currentStep maxStep orphan popupDelay popupCloseDelay popupClass fixed preventScrolling scrollIntoView nextStep prevStep nextPath prevPath scrollOffset scrollParentId'.split(' '),
                 orderWatch,
                 enabledWatch,
                 contentWatch;
