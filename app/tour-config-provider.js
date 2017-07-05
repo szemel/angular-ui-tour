@@ -23,6 +23,7 @@ export default function TourConfig() {
 
             onStart: null,
             onEnd: null,
+            onExit: null,
             onPause: null,
             onResume: null,
             onNext: null,

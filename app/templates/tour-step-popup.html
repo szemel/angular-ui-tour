@@ -14,7 +14,7 @@
 
     <div class="arrow"></div>
     <div class="popover-inner tour-step-inner">
-        <h3 class="popover-title tour-step-title" ng-if="tourStep.config('title')">{{tourStep.config('title') | translate}}<i class="fa fa-times" aria-hidden="true"  ng-click="tour.end()"></i></h3>
+        <h3 class="popover-title tour-step-title" ng-if="tourStep.config('title')">{{tourStep.config('title') | translate}}<i class="fa fa-times" aria-hidden="true"  ng-click="tour.exit()"></i></h3>
         <div class="popover-content tour-step-content"
              ng-include="tourStep.config('templateUrl') || 'tour-step-template.html'"></div>
     </div>

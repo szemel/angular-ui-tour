@@ -443,6 +443,12 @@ export default function uiTourController($timeout, $q, $filter, $document, TourC
         return self.goTo('$next');
     };
 
+    self.exit = function () {
+        if (getCurrentStep().config('onExit')) {
+            getCurrentStep().config('onExit')();
+        }
+        self.end();
+    };
     /**
      * move to previous step
      *
